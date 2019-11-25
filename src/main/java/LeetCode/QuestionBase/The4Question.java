@@ -15,7 +15,9 @@ package LeetCode.QuestionBase;
  * 则中位数是 2.0
  */
 public class The4Question {
-    public static Double CalculateMedian(){
+    public static Double CalculateMedian(int [] num1 ,int [] num2){
+        int i = num1.length + num2.length;
+
         return 1.0;
 
     }
