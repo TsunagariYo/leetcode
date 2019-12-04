@@ -22,7 +22,10 @@ package LeetCode.QuestionBase;
  * 'e' 是那个被添加的字母。
  */
 public class The389Question {
+
+    //异或的方法
     public static char findTheDifference(String s, String t) {
+        //二进制的异或,如果尽享两次相同的异或运算就会归为原来的0
         int res = 0;
         for (char c : s.toCharArray()) {
             res ^= c;
@@ -31,7 +34,6 @@ public class The389Question {
             res ^= c;
         }
         return (char) res;
-
     }
 
     public static void main(String[] args) {
