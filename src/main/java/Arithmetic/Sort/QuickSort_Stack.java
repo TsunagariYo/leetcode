@@ -5,18 +5,22 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Stack;
 
-public class QuickSort {
+/**
+ *  栈实现快速排序
+ *
+ */
+public class QuickSort_Stack {
     public static void quickSort(int[] arr, int startIndex, int endIndex) {
-// 用一个集合栈来代替递归的函数栈
+        // 用一个集合栈来代替递归的函数栈
         Stack<Map<String, Integer>> quickSortStack = new Stack<Map<String, Integer>>();
-// 整个数列的起止下标，以哈希的形式入栈
+        // 整个数列的起止下标，以哈希的形式入栈
         Map rootParam = new HashMap();
         rootParam.put("startIndex", startIndex);
         rootParam.put("endIndex", endIndex);
         quickSortStack.push(rootParam);
-// 循环结束条件：栈为空时结束
+        // 循环结束条件：栈为空时结束
         while (!quickSortStack.isEmpty()) {
-// 栈顶元素出栈，得到起止下标
+        // 栈顶元素出栈，得到起止下标
             Map<String, Integer> param = quickSortStack.pop();
 // 得到基准元素位置
             int pivotIndex = partition(arr, param.get("startIndex"), param.get("endIndex"));

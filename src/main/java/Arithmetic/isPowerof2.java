@@ -21,7 +21,7 @@ public class isPowerof2 {
 
 
     public static void main(String[] args) {
-        boolean powerof = method1(64);
+        boolean powerof = method2(100);
         System.out.println(powerof);
     }
 }
