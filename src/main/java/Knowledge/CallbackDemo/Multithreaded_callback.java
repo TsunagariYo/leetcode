@@ -1,4 +1,4 @@
-package CallbackDemo;
+package Knowledge.CallbackDemo;
 
 import org.junit.jupiter.api.Test;
 

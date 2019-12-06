@@ -1,4 +1,4 @@
-package Knowledge.TCP;
+package Knowledge.Conmunication.TCP;
 
 import java.net.ServerSocket;
 import java.net.Socket;

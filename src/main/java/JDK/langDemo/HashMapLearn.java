@@ -31,11 +31,26 @@ import java.util.HashMap;
  *
  *
  *
- * 静态方法
- *      hash            计算key的hashcode
+ * 内部方法
+ *      hash    计算key的hashcode
  *      comparableClassFor(object o)      当他实现Comparable<O>接口且比较的参数是他本身返回 class O的类型
  *      compareComparables(Class<?> kc, Object k, Object x) 判断x是否是kc类型的,不是的话比较K和x
  *      tableSizeFor(int cap)    将参数转化为其对应的最大的2^n次方数                            !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+ *      resize() 扩容方法   如果开始为空扩容到16 阀值为0.75*16=12,不为空 新阀值为老阀值*2,新容量也为老容量的2倍,如果容量超过2^30 则为设置为int的最大值
+ *      treeifyBin(Node<K,V>[] tab, int hash) 当链表的长度大于8时候转化为红黑树   ?????????????????????????
+ *
+ *
+ *
+ * 方法
+ *      size()判断键值对的数量
+ *      isEmpty()判断是否为空
+ *      get(Object key) 通过key找Value   通过getNode(int hash,Object key)方法实现
+ *      containsKey(Object key)   是否包含key
+ *      put(key,value)      通过putVal(int hash, K key, V value, boolean onlyIfAbsent(true是不改变已经存在的key值对应的value值),boolean evict)方法 \
+ *                          (n - 1) & hash除法散列法  为了让散列的结果更加的均匀
+ *                          讲解链接:https://blog.csdn.net/AJ1101/article/details/79413939
+ *
+ *
  *
  *
  *

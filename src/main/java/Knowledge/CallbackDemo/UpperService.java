@@ -1,4 +1,4 @@
-package CallbackDemo;
+package Knowledge.CallbackDemo;
 
 /**
  * 上层服务接口

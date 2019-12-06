@@ -1,4 +1,4 @@
-package ThreadComm;
+package Knowledge.MultiThread;
 
 import java.util.ArrayList;
 
