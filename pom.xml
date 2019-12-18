@@ -6,7 +6,11 @@
 
     <groupId>leetcode_exercise</groupId>
     <artifactId>letcode</artifactId>
+    <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
+    <modules>
+        <module>Crropper-text</module>
+    </modules>
 
     <parent>
         <groupId>org.springframework.boot</groupId>
@@ -36,7 +40,6 @@
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
             <version>4.12</version>
-            <scope>test</scope>
         </dependency>
         <dependency>
             <groupId>org.junit.jupiter</groupId>

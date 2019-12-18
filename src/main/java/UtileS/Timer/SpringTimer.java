@@ -1,5 +1,6 @@
 package UtileS.Timer;
 
+import UtileS.HttpUtile;
 import org.springframework.scheduling.annotation.Scheduled;
 
 import java.util.Date;
