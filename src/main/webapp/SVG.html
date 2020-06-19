@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SVGDemo</title>
+</head>
+<style>
+    circle {
+        fill: transparent;
+        stroke-width: 10px;
+    }
+    #circle {
+        stroke-dasharray: 250.921;
+        stroke-dashoffset: 250.921;
+        animation: round 3s linear infinite;
+    }
+    @keyframes round {
+        to {
+            stroke-dashoffset: 0;
+        }
+    }
+</style>
+
+<script>
+
+</script>
+<body>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+    <g>
+        <circle cx="100" cy="60" r="40" stroke="#ccc" />
+        <circle id="circle" cx="100" cy="60" r="40" stroke="hsl(160,80%,50%)" />
+    </g>
+</svg>
+</body>
+</html>
