@@ -1,10 +1,10 @@
 spring:
   thymeleaf:
-    prefix:
-      classpath: /templates/
+    prefix: classpath:/templates/
     suffix: .html
-    mode: LEGACYHTML5
-    servlet:
-      content-type: text/html
-    encoding: utf-8
+    check-template: true
+    check-template-location: true
+    mode: HTML5
+    encoding: UTF-8
+    enabled: true
     cache: false
